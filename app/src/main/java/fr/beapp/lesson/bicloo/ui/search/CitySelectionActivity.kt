@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import fr.beapp.lesson.bicloo.databinding.CitySelectionActivityBinding
 import fr.beapp.lesson.bicloo.logic.ContractEntity
+import fr.beapp.lesson.bicloo.shared.Greeting
 import fr.beapp.lesson.bicloo.ui.station.StationsActivity
 
 
@@ -31,7 +32,8 @@ class CitySelectionActivity : AppCompatActivity() {
         viewModel.contracts.observe(this, adapter::replaceAll)
         viewModel.loadContracts()
 
-
+        val greeting = Greeting().greeting()
+        println("MSG FROM KMP = $greeting")
     }
 
     private fun onContractClicked(contractEntity: ContractEntity) {
