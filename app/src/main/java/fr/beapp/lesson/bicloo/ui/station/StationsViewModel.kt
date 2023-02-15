@@ -5,13 +5,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import fr.beapp.lesson.bicloo.core.rest.RestManager
-import fr.beapp.lesson.bicloo.logic.StationEntity
+import fr.beapp.lesson.bicloo.shared.logic.StationEntity
+import fr.beapp.lesson.bicloo.shared.rest.DataSource
 import kotlinx.coroutines.launch
 
 class StationsViewModel : ViewModel() {
 
-    private val manager = RestManager
+    private val manager = DataSource
 
     private val _stations = MutableLiveData<List<StationEntity>>()
     val stations: LiveData<List<StationEntity>>

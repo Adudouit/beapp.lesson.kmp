@@ -6,7 +6,7 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import fr.beapp.lesson.bicloo.databinding.StationsActivityBinding
-import fr.beapp.lesson.bicloo.logic.StationEntity
+import fr.beapp.lesson.bicloo.shared.logic.StationEntity
 
 class StationsActivity : AppCompatActivity() {
 

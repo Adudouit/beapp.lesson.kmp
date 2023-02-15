@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import fr.beapp.lesson.bicloo.databinding.ContractItemBinding
 import fr.beapp.lesson.bicloo.databinding.StationItemBinding
-import fr.beapp.lesson.bicloo.logic.ContractEntity
+import fr.beapp.lesson.bicloo.shared.logic.ContractEntity
 
 class ContractsAdapter(private val onContratClicked: (ContractEntity) -> Unit) : RecyclerView.Adapter<ContractItem>() {
 

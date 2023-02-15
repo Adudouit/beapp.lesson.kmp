@@ -1,7 +1,8 @@
-package fr.beapp.lesson.bicloo.core.rest
+package fr.beapp.lesson.bicloo.shared.rest
 
-import fr.beapp.lesson.bicloo.logic.ContractEntity
+import fr.beapp.lesson.bicloo.shared.logic.ContractEntity
 
+@kotlinx.serialization.Serializable
 class ContractDTO {
 
     var cities: List<String>? = null

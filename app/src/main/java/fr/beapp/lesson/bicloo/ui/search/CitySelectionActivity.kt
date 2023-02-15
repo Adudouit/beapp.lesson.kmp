@@ -7,7 +7,7 @@ import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import fr.beapp.lesson.bicloo.databinding.CitySelectionActivityBinding
-import fr.beapp.lesson.bicloo.logic.ContractEntity
+import fr.beapp.lesson.bicloo.shared.logic.ContractEntity
 import fr.beapp.lesson.bicloo.shared.Greeting
 import fr.beapp.lesson.bicloo.ui.station.StationsActivity
 

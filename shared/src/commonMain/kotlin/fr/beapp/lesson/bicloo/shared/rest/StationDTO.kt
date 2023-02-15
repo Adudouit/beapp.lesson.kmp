@@ -1,8 +1,10 @@
-package fr.beapp.lesson.bicloo.core.rest
+package fr.beapp.lesson.bicloo.shared.rest
 
-import fr.beapp.lesson.bicloo.logic.State
-import fr.beapp.lesson.bicloo.logic.StationEntity
+import fr.beapp.lesson.bicloo.shared.logic.State
+import fr.beapp.lesson.bicloo.shared.logic.StationEntity
+import kotlinx.serialization.Serializable
 
+@Serializable
 class StationDTO {
     var number: Int = 0
     var name: String = ""
@@ -16,6 +18,7 @@ class StationDTO {
         return StationEntity(number, name, position.longitude, position.latitude, State.valueOf(status), address, contractName)
     }
 
+    @Serializable
     data class PositionDTO(val latitude: Double, val longitude: Double)
 }
 

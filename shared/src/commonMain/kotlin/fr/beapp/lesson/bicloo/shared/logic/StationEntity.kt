@@ -1,10 +1,10 @@
-package fr.beapp.lesson.bicloo.logic
+package fr.beapp.lesson.bicloo.shared.logic
 
 data class StationEntity(
     val number: Number,
     val name: String,
-    val longitude: Number,
-    val latitude: Number,
+    val longitude: Double,
+    val latitude: Double,
     val state: State,
     val address: String,
     val contractName: String

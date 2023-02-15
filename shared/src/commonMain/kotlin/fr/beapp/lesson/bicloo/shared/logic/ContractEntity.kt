@@ -1,4 +1,4 @@
-package fr.beapp.lesson.bicloo.logic
+package fr.beapp.lesson.bicloo.shared.logic
 
 data class ContractEntity(
     val cities: List<String>?,
